@@ -30,7 +30,7 @@ font & reset css
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* 
 ---------------------------------------------
-reset
+02. reset
 --------------------------------------------- 
 */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
@@ -136,7 +136,7 @@ img {
 
 /* 
 ---------------------------------------------
-global styles
+03. global styles
 --------------------------------------------- 
 */
 html,
@@ -250,7 +250,7 @@ body {
 
 .main-red-button-hover a {
   display: inline-block;
-  background-color: #ff695f;
+  background-color: #338BFF;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -284,7 +284,7 @@ header
 */
 
 .background-header {
-  background-color: #fff!important;
+  background-color: #14141f!important;
   height: 80px!important;
   position: fixed!important;
   top: 0px;
@@ -295,7 +295,7 @@ header
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-  color: #1e1e1e!important;
+  color: #F0F4F8!important;
 }
 
 .background-header .main-nav .nav li:hover a {
@@ -307,7 +307,7 @@ header
 }
 
 .header-area {
-  background-color: #fafafa;
+  background-color: #14141f;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -384,7 +384,7 @@ header
 
 .header-area .main-nav .nav li:last-child .main-red-button-hover a:hover,
 .background-header .main-nav .nav li:last-child .main-red-button-hover a:hover {
-  background-color: #03a4ed !important;
+  background-color: #f0a637 !important;
 }
 
 .header-area .main-nav .nav li a {
@@ -404,17 +404,17 @@ header
 }
 
 .header-area .main-nav .nav li a {
-  color: #2a2a2a;
+  color: #F0F4F8;
 }
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #ff685f!important;
+  color: #f0a637 !important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #ff685f!important;
+  color: #f0a637 !important;
   opacity: 1;
 }
 
@@ -516,7 +516,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #1e1e1e;
+  background-color: #F0F4F8;
   display: block;
   position: absolute;
   width: 30px;
@@ -527,7 +527,7 @@ header
 .background-header .main-nav .menu-trigger span,
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #1e1e1e;
+  background-color: #F0F4F8;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -536,7 +536,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #1e1e1e;
+  background-color: #F0F4F8;
   display: block;
   position: absolute;
   width: 30px;
@@ -547,7 +547,7 @@ header
 
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #1e1e1e;
+  background-color: #F0F4F8;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -588,11 +588,11 @@ header
   -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
   -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
   transform: translateY(6px) translateX(1px) rotate(45deg);
-  background-color: #1e1e1e;
+  background-color: #F0F4F8;
 }
 
 .background-header .main-nav .menu-trigger.active span:before {
-  background-color: #1e1e1e;
+  background-color: #F0F4F8;
 }
 
 .header-area .main-nav .menu-trigger.active span:after {
@@ -600,11 +600,11 @@ header
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  background-color: #1e1e1e;
+  background-color: #F0F4F8;
 }
 
 .background-header .main-nav .menu-trigger.active span:after {
-  background-color: #1e1e1e;
+  background-color: #F0F4F8;
 }
 
 .header-area.header-sticky {
@@ -616,7 +616,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #ff685f;
+  color: #F0F4F8 ;
 }
 
 @media (max-width: 1200px) {
@@ -649,14 +649,14 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #ff685f!important;
+    color: #338BFF !important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
     width: 100%;
   }
   .header-area {
-    background-color: #f7f7f7;
+    background-color: #14141f;
     padding: 0px 15px;
     height: 100px;
     box-shadow: none;
@@ -1778,17 +1778,18 @@ form#contact button:hover {
 
 /* 
 ---------------------------------------------
-Footer Style
+09. Footer Style
 --------------------------------------------- 
 */
 
 .footer-dec {
   width: 100%;
-  margin-top: 160px;
+  margin-top: 0px;
 }
 
 footer {
   margin-top: -50px;
+  background-color: #14141f;
   z-index: 2;
   position: relative;
 }
@@ -1796,7 +1797,7 @@ footer {
 footer .footer-item h4 {
   font-size: 18px;
   font-weight: 700;
-  color: #2a2a2a;
+  color: #F0F4F8;
   margin-bottom: 30px;
 }
 
@@ -1806,8 +1807,15 @@ footer .about .logo img {
 }
 
 footer .about a {
-  color: #afafaf;
+  color: #F0F4F8;
   font-weight: 300;
+  transition: all .3s;
+}
+
+footer .about a:hover {
+  color: #f0a637;
+  font-weight: 300;
+  transition: all .3s;
 }
 
 footer .about ul {
@@ -1822,8 +1830,8 @@ footer .about ul li {
 footer .about ul li a {
   width: 32px;
   height: 32px;
-  background-color: #03a4ed;
-  color: #fff !important;
+  background-color: #F0F4F8;
+  color: #14141f !important;
   border-radius: 50%;
   text-align: center;
   display: inline-block;
@@ -1832,7 +1840,7 @@ footer .about ul li a {
 }
 
 footer .about ul li a:hover {
-  background-color: #ff695f;
+  background-color: #f0a637;
 }
 
 footer .footer-item ul li {
@@ -1846,12 +1854,13 @@ footer .footer-item ul li:last-child {
 
 footer .footer-item ul li a {
   font-size: 15px;
-  color: #afafaf;
+  color: #F0F4F8;
   transition: all .3s;
 }
 
 footer .footer-item ul li a:hover {
-  color: #ff695f;
+  color: #f0a637;
+  transition: all .3s;
 }
 
 footer .footer-item p {
@@ -1894,14 +1903,14 @@ footer .footer-item form button {
 footer .copyright p {
   text-align: center;
   border-top: 1px solid #eee;
-  color: #afafaf;
+  color: #F0F4F8; /* color font */
   margin-top: 50px;
   padding: 20px 0px;
   font-weight: 300;
 }
 
 footer .copyright p a {
-  color: #ff695f;
+  color: #5ffaff;
 }
 
 /* 
