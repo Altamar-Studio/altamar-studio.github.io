@@ -132,7 +132,7 @@ p {
 img {
   width: 100%; /* 100% */
   overflow: hidden;
-  margin-right: 80px;
+  margin-right: 0px;
 }
 
 /* 
@@ -1020,10 +1020,14 @@ Services Style
 
 .our-services .item {
   text-align: center;
-  margin: 15px;
-  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 12px;
+  border-radius: 24px;
   background-color: #F0F4F8;
-  padding: 30px;
+  padding: 48px;
+  flex-direction: column;
+  height: 480px; /* Ajusta este valor según lo que necesites */
   box-shadow: 0px 0px 15px rgba(0,0,0,0.05);
 }
 
@@ -1031,19 +1035,20 @@ Services Style
   font-size: 20px;
   font-weight: 700;
   color: #2a2a2a;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   line-height: 30px;
 }
 
 .our-services .item .icon {
   width: 45px;
   height: 45px;
-  margin: 0 auto;
+  margin: auto;
+  display: block;
 }
 
 .our-services .item p {
-  margin-top: 35px;
-  padding-top: 30px;
+  margin-top: 8px;
+  padding-top: 0px;
   border-top: 1px solid #eee;
 }
 
