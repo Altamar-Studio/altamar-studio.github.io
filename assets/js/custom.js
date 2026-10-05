@@ -115,6 +115,33 @@
     }
   });
 
+$(document).ready(function () {
+      $(document).on("scroll", onScroll);
+      
+      //smoothscroll
+      $('.scroll-to-section a[href^="#"]').on('click', function (e) {
+          var targetId = this.hash;
+          var $target = $(targetId);
+          
+          if ($target.length) {
+              e.preventDefault();
+              $(document).off("scroll");
+              
+              $('.scroll-to-section a').removeClass('active');
+              $(this).addClass('active');
+            
+              $('html, body').stop().animate({
+                  scrollTop: ($target.offset().top) + 1
+              }, 500, 'swing', function () {
+                  // CAMBIO AQUÍ: Usamos pushState para evitar el [object Object]
+                  history.pushState(null, null, targetId);
+                  $(document).on("scroll", onScroll);
+              });
+          }
+      });
+  });
+
+  /*
   $(document).ready(function () {
       $(document).on("scroll", onScroll);
       
@@ -139,6 +166,7 @@
           });
       });
   });
+  */
 
   function onScroll(event){
       var scrollPos = $(document).scrollTop();
