@@ -14,7 +14,6 @@
   <title>Altamar Studio | Desarrollo Web</title>
   <meta name="description" content="Infraestructura y diseño web sin fronteras.">
   <link rel="canonical" href="https://www.altamarstudio.es/">
-  <!--<link rel="canonical" href="https://altamar-studio.github.io/">-->
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -69,7 +68,6 @@
               <li class="scroll-to-section"><a href="#portfolio">Portafolio</a></li>
               <li class="scroll-to-section"><a href="#pricing">Planes</a></li>
               <li class="scroll-to-section">
-
                 <div class="main-red-button-hover"><a href="#contact">Contacto</a></div>
               </li>
             </ul>
@@ -501,7 +499,7 @@
 
         <div class="col-lg-12">
           <div class="copyright">
-            <p>Copyright © 2026 Altamar Studio. Reservados todos los derechos.</p>
+            <p>Copyright © <span id="year">2026</span> Altamar Studio. Reservados todos los derechos.</p>
           </div>
         </div>
       </div>
@@ -536,6 +534,16 @@
       }
     });
   </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const yearSpan = document.getElementById("year");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    });
+  </script>
+
 </body>
 
 </html>

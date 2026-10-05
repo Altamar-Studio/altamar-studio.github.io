@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.altamarstudio.es/sitemap.xml
